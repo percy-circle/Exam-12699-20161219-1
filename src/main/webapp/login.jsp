@@ -7,13 +7,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <body>
-	<form action="/Exam-12699-20161219-1/AppServlet" method="post">
+<div>
+ <span>电影租赁系统</span><br><br><br>
+<form action="/Exam-12699-20161219-1/AppServlet" method="post">
 	<input name="method" value="login" type="hidden">
 	<input name="path" value="${path}" type="hidden">
-	请输入first_name：<input type="text" name="first_name"><span>${message}</span><br>
+	请输入first_name：<input type="text" name="first_name"><span>${message}</span><br><br><br>
 	<input type="submit" value="登录">
 	<input type="reset" value="重置">
-	</form>
+</form>
+</div>
 </body>
 </html>

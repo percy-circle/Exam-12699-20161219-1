@@ -24,6 +24,7 @@
 		}
 	}
 </script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <body>
 <form action="/Exam-12699-20161219-1/AppServlet" method="post" onsubmit="return check()">
 	<input name="method" value="toAdd" type="hidden"><br>

@@ -1,8 +1,6 @@
 package servlet;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -44,6 +42,18 @@ public class AppServlet extends HttpServlet {
 			toupdate(request, response);
 		} else if (method.equals("findAllFilm")) {
 			findAllFilm(request, response);
+		}else if (method.equals("exit")) {
+			exit(request, response);
+		}
+	}
+
+	private void exit(HttpServletRequest request, HttpServletResponse response) {
+		request.getSession().removeAttribute("customer");
+		try {
+			response.sendRedirect("/Exam-12699-20161219-1/index.jsp");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
@@ -114,7 +124,6 @@ public class AppServlet extends HttpServlet {
 
 		}
 
-	//}
 
 	private void add(HttpServletRequest request, HttpServletResponse response) {
 		List<Language> list = filmService.findAllLanguage();

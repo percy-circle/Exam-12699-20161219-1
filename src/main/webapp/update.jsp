@@ -7,8 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="/Exam-12699-20161219-1/js/jquery-1.8.2.js"></script>
 <script type="text/javascript">
+
 	//form提交前，验证
 	function check() {
 		var title = $("#title").val();

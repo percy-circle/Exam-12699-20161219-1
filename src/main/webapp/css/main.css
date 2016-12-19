@@ -1,0 +1,14 @@
+body{
+	background: #6699CC;
+	color: #D5D6E2;
+
+}
+div{
+	margin-top:260px;
+	text-align: center;
+}
+span {
+	font-size:30px;
+	text-shadow: red;
+	
+}
