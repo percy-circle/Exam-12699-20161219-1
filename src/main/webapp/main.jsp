@@ -9,6 +9,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="/Exam-12699-20161219-1/css/main.css">
 <body>
+	<a href='/Exam-12699-20161219-1/AppServlet?method=add' id="add">添加</a>
 	<table align='center' border='1px' style='margin-top: 20px' width='1100'>
 		<tr align="center">
 			<th>ID</th>
@@ -17,7 +18,7 @@
 			<th>语言</th>
 			<th>操作</th>
 		</tr>
-
+    
 		<c:forEach items="${films}" var="film" varStatus="order">
 			<tr align="center">
 				<td>${film.film_id}</td>
@@ -28,9 +29,7 @@
 					<a href='/Exam-12699-20161219-1/AppServlet?method=delete&id=${film.film_id}'>删除</a></td>
 			</tr>
 		</c:forEach>
-		<tr>
-			<td colspan="8" align="center"><a href='/Exam-12699-20161219-1/AppServlet?method=add'>[添加]</a></td>
-		</tr>
+		
 	</table>
 </body>
 </html>
