@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>更新</title>
+<title>更新电影</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="/Exam-12699-20161219-1/js/jquery-1.8.2.js"></script>
