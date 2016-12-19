@@ -95,10 +95,11 @@ public class FilmDaoImpl implements FilmDao {
 		Connection connection = JdbcUtil.getConnection();
 		int result = 0;
 		// 没写级联删除
-		String sql4 = "delete from film where film_id=?";
+		String sql = "delete from film where film_id=?";
 		try {
-			PreparedStatement preparedStatement4 = connection.prepareStatement(sql4);
-			result = preparedStatement4.executeUpdate();
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, id);
+			result = preparedStatement.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
